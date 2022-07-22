@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.21)
-project(BasicKernel)
 include(kernel.cmake)
+project(BasicKernel)
 
 set(CMAKE_CXX_STANDARD 20)
 

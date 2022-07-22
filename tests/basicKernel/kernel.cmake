@@ -11,4 +11,4 @@ if(NOT ${CMAKE_CXX_COMPILER_ID} MATCHES "Clang")
 endif()
 
 add_compile_options(-mno-sse -mno-sse2 -mno-red-zone -fno-exceptions -fno-rtti)
-add_link_options(-nostdlib -nostartfiles -fuse-ld=lld -Wl,-entry=kmain -mcmodel=kernel -T ${PROJECT_SOURCE_DIR}/kernel.ld -static -fpie)
+add_link_options(-nostdlib -nostartfiles -fuse-ld=lld -Wl,-entry=kmain -mcmodel=kernel -T ../kernel.ld -static -fpie)
